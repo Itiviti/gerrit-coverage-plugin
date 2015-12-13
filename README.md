@@ -55,7 +55,8 @@ curl --digest -i --user admin:admin -X GET "http://localhost:8080/a/changes/some
 ```
 
 which currently would result in
-```{
+```
+{
   "hits": {
     "0": 2,
     "1": 1,
