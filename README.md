@@ -16,6 +16,10 @@ A fork of gerrit 2.11 will be necessary to be able to use it.
 On a longer term, it would be nice to be able to add the necessary
 extension points in Gerrit so that the plugin can customize the diff screen.
 
+And here's a teaser for how it's going to look:
+
+![Preview](https://github.com/Ullink/gerrit-coverage-plugin/raw/master/img/coverage_screen1.png)
+
 ## Example of the 2 REST endpoints added
 ### Upload
 
