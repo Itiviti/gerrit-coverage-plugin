@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/Ullink/gerrit-coverage-plugin.svg?label=build linux)](https://travis-ci.org/Ullink/gerrit-coverage-plugin) [![GitHub license](https://img.shields.io/github/license/Ullink/gerrit-coverage-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0) 
+
 # gerrit-coverage-plugin
 A Gerrit plugin for making coverage information available at review-time.
 
