@@ -20,6 +20,24 @@ And here's a teaser for how it's going to look:
 
 ![Preview](https://github.com/Ullink/gerrit-coverage-plugin/raw/master/img/coverage_screen1.png)
 
+### Wait, what ? I *want* that now
+
+Glad you're asking, it's not yet production ready, but maybe you can help !
+Here's the status/TODO:
+
+- Issue tracking code coverage support in gerrit is [#3538](https://code.google.com/p/gerrit/issues/detail?id=3538)
+- Implementation details are being discussed [here](https://groups.google.com/forum/#!topic/repo-discuss/qQyEkofDFHM), jump in !
+- Current direction seems to be to store the coverage data in Gerrit server
+- Gerrit UI will be modified to display the data
+ 
+### Thanks but really, I want it *now*
+
+Although that's what we're currently running ourselves (and how we got the screenshot above), it's only a POC right now, and you should probably not use it, but here is how we got it running:
+
+- A gerrit 2.11.5 fork [here](https://github.com/muryoh/gerrit/tree/v2.11.5-coverage) uses this plugin data to display the gutter
+- This very plugin stores the code coverage (in a MapDB file), and exposes REST endpoints to upload it
+- A sonar-gerrit-plugin fork [here](https://github.com/muryoh/sonar-gerrit-plugin/tree/v2.2.2.1-coverage) now also uploads the code coverage when running sonar analysis on a patchset
+
 ## Example of the 2 REST endpoints added
 ### Upload
 
