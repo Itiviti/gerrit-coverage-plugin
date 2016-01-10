@@ -36,6 +36,9 @@ public class CoverageDb {
 
     public void registerCoverage(RevisionResource revision, PatchCoverageInput input) {
         PatchSet.Id patchSetId = revision.getPatchSet().getId();
+        if (input.coverage == null) {
+            return;
+        }
         for (Map.Entry<String, FileCoverageInput> coverageEntry : input.coverage.entrySet()) {
             Patch.Key patchKey = new Patch.Key(patchSetId, coverageEntry.getKey());
             FileCoverageInput coverage = coverageEntry.getValue();
